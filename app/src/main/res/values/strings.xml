@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">JavaCalculator</string>
+    <string name="leftBrackets">(</string>
+    <string name="rightBrackets">)</string>
+    <string name="clean">c</string>
+    <string name="divide">÷</string>
+    <string name="multiply">×</string>
+    <string name="plus">+</string>
+    <string name="reduce">-</string>
+    <string name="equal">=</string>
+    <string name="point">.</string>
+    <string name="reverse">1/x</string>
+    <string name="square">x²</string>
+    <string name="help">help</string>
+    <string name="exit">exit</string>
+    <string name="unitChange">单位转换</string>
+    <string name="baseChange">进制转换</string>
+    <string name="cal">计算器</string>
+    <string name="delete">Del</string>
+</resources>
