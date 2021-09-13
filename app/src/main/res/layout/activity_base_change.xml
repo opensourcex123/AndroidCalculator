@@ -1,9 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BaseChangeActivity">
+    tools:context=".BaseChangeActivity"
+    android:columnCount="4"
+    android:rowCount="6">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/spinnerStartBase"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="2"
+        android:textSize="50sp"
+        android:entries="@array/spinArrBase"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="2"
+        android:id="@+id/unitStartBase"
+        android:maxLines="2"
+        android:textSize="50sp"/>
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/spinnerDestBase"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="2"
+        android:textSize="50sp"
+        android:entries="@array/spinArrBase"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/unitDestBase"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:textSize="50sp"
+        android:maxLines="2"
+        android:layout_columnSpan="2" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="D"
+        android:id="@+id/btn_D_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="E"
+        android:id="@+id/btn_E_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="2"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="F"
+        android:id="@+id/btn_F_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="A"
+        android:id="@+id/btn_A_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="B"
+        android:id="@+id/btn_B_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="2"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="C"
+        android:id="@+id/btn_C_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="7"
+        android:id="@+id/btn_7_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="8"
+        android:id="@+id/btn_8_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="9"
+        android:id="@+id/btn_9_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/clean"
+        android:id="@+id/btn_clear_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_rowSpan="2"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="4"
+        android:id="@+id/btn_4_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="5"
+        android:id="@+id/btn_5_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="6"
+        android:id="@+id/btn_6_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="1"
+        android:id="@+id/btn_1_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="2"
+        android:id="@+id/btn_2_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="3"
+        android:id="@+id/btn_3_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/delete"
+        android:id="@+id/btn_del_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_rowSpan="2"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="0"
+        android:id="@+id/btn_0_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="2"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/point"
+        android:id="@+id/btn_point_base"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+
+</GridLayout>

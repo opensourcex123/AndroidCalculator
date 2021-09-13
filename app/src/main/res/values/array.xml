@@ -8,4 +8,10 @@
         <item>立方米</item>
         <item>立方分米</item>
     </string-array>
+    <string-array name="spinArrBase">
+        <item>二进制</item>
+        <item>八进制</item>
+        <item>十进制</item>
+        <item>十六进制</item>
+    </string-array>
 </resources>
