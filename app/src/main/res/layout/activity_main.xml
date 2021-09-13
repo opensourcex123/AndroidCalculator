@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:columnCount="4"
-    android:rowCount="7">
+    android:rowCount="8">
 
     <EditText
         android:id="@+id/content"
@@ -11,9 +11,37 @@
         android:layout_height="200dp"
         android:layout_columnSpan="4"
         android:layout_gravity="bottom|end"
+        android:gravity="top|start"
         android:textSize="50sp"
         android:background="#ccc"/>
-
+    <Button
+        android:id="@+id/button_sin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/sin"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:textAllCaps="false"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/button_cos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/cos"
+        android:textAllCaps="false"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_columnSpan="2"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/button_tan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tan"
+        android:textAllCaps="false"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:textSize="25sp" />
     <Button
         android:id="@+id/button_reverse"
         android:layout_width="0dp"

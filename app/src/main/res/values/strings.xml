@@ -17,4 +17,7 @@
     <string name="baseChange">进制转换</string>
     <string name="cal">计算器</string>
     <string name="delete">Del</string>
+    <string name="sin">sin</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
 </resources>

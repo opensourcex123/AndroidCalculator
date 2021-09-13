@@ -32,8 +32,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn_plus; //+
     Button btn_point; //.
     Button btn_equal; //=
-    Button btn_reverse;
-    Button btn_square;
+    Button btn_reverse; // 取倒数
+    Button btn_square;  // 取平方
+    Button btn_sin;
+    Button btn_cos;
+    Button btn_tan;
     Button btn_leftBracket;//(
     Button btn_rightBracket;//)
     EditText contentBox;
@@ -67,6 +70,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         contentBox = findViewById(R.id.content);
         btn_reverse = findViewById(R.id.button_reverse);
         btn_square = findViewById(R.id.button_square);
+        btn_sin = findViewById(R.id.button_sin);
+        btn_cos = findViewById(R.id.button_cos);
+        btn_tan = findViewById(R.id.button_tan);
         btn_leftBracket = findViewById(R.id.button_leftBrackets);
         btn_rightBracket = findViewById(R.id.button_rightBrackets);
     }
@@ -91,6 +97,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_clear.setOnClickListener(this);
         btn_reverse.setOnClickListener(this);
         btn_square.setOnClickListener(this);
+        btn_sin.setOnClickListener(this);
+        btn_cos.setOnClickListener(this);
+        btn_tan.setOnClickListener(this);
         btn_rightBracket.setOnClickListener(this);
         btn_leftBracket.setOnClickListener(this);
     }
@@ -173,6 +182,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             break;
             case R.id.button_square: {
                 Square();
+            }
+            break;
+            case R.id.button_sin: {
+                Sin();
+            }
+            break;
+            case R.id.button_cos: {
+                Cos();
+            }
+            break;
+            case R.id.button_tan: {
+                Tan();
             }
             break;
             case R.id.button_clear: {
@@ -329,6 +350,99 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         sArray = temp.split("#+");
         Double res = Double.parseDouble(sArray[sArray.length - 1]) * Double.parseDouble(sArray[sArray.length - 1]);
+        sArray[sArray.length - 1] = String.valueOf(res);
+        StringBuilder str_new = new StringBuilder();
+        for (String s : sArray) {
+            str_new.append(s);
+        }
+        contentBox.setText(str_new.toString());
+    }
+
+    private void Sin() {
+        String str = contentBox.getText().toString();
+        String[] sArray;
+        char[] ch = str.toCharArray();
+        if (!Character.isDigit(ch[str.length() - 1])) {
+            Toast.makeText(this, "无操作数", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        int i = 0;
+        String temp = "";
+        int j = str.length() - 1;
+        while (i <= j) {
+            if (str.charAt(i) == '+' || str.charAt(i) == '-' || str.charAt(i) == 'x' || str.charAt(i) == '÷' || str.charAt(i) == '(' || str.charAt(i) == ')') {
+                temp += "#";
+                temp += str.charAt(i);
+                temp += "#";
+            } else {
+                temp += str.charAt(i);
+            }
+            i++;
+        }
+        sArray = temp.split("#+");
+        Double res = Math.sin(Double.parseDouble(sArray[sArray.length - 1]));
+        sArray[sArray.length - 1] = String.valueOf(res);
+        StringBuilder str_new = new StringBuilder();
+        for (String s : sArray) {
+            str_new.append(s);
+        }
+        contentBox.setText(str_new.toString());
+    }
+
+    private void Cos() {
+        String str = contentBox.getText().toString();
+        String[] sArray;
+        char[] ch = str.toCharArray();
+        if (!Character.isDigit(ch[str.length() - 1])) {
+            Toast.makeText(this, "无操作数", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        int i = 0;
+        String temp = "";
+        int j = str.length() - 1;
+        while (i <= j) {
+            if (str.charAt(i) == '+' || str.charAt(i) == '-' || str.charAt(i) == 'x' || str.charAt(i) == '÷' || str.charAt(i) == '(' || str.charAt(i) == ')') {
+                temp += "#";
+                temp += str.charAt(i);
+                temp += "#";
+            } else {
+                temp += str.charAt(i);
+            }
+            i++;
+        }
+        sArray = temp.split("#+");
+        Double res = Math.cos(Double.parseDouble(sArray[sArray.length - 1]));
+        sArray[sArray.length - 1] = String.valueOf(res);
+        StringBuilder str_new = new StringBuilder();
+        for (String s : sArray) {
+            str_new.append(s);
+        }
+        contentBox.setText(str_new.toString());
+    }
+
+    private void Tan() {
+        String str = contentBox.getText().toString();
+        String[] sArray;
+        char[] ch = str.toCharArray();
+        if (!Character.isDigit(ch[str.length() - 1])) {
+            Toast.makeText(this, "无操作数", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        int i = 0;
+        String temp = "";
+        int j = str.length() - 1;
+        while (i <= j) {
+            if (str.charAt(i) == '+' || str.charAt(i) == '-' || str.charAt(i) == 'x' || str.charAt(i) == '÷' || str.charAt(i) == '(' || str.charAt(i) == ')') {
+                temp += "#";
+                temp += str.charAt(i);
+                temp += "#";
+            } else {
+                temp += str.charAt(i);
+            }
+            i++;
+        }
+        sArray = temp.split("#+");
+        Double res = Math.tan(Double.parseDouble(sArray[sArray.length - 1]));
         sArray[sArray.length - 1] = String.valueOf(res);
         StringBuilder str_new = new StringBuilder();
         for (String s : sArray) {
