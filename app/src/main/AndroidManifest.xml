@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JavaCalculator">
         <activity
+            android:name=".VolumeChangeActivity"
+            android:exported="true" />
+        <activity
             android:name=".BaseChangeActivity"
             android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".UnitChangeActivity"
             android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

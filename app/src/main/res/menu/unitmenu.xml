@@ -6,10 +6,4 @@
     <item
         android:id="@+id/exit_unit"
         android:title="@string/exit" />
-    <item
-        android:id="@+id/cal"
-        android:title="@string/cal" />
-    <item
-        android:id="@+id/baseChange_unit"
-        android:title="@string/baseChange" />
 </menu>

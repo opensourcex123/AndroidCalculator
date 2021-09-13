@@ -474,6 +474,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             }
             break;
+            case R.id.volumeChange: {
+                Intent intent = new Intent(this, VolumeChangeActivity.class);
+                startActivity(intent);
+            }
+            break;
             case R.id.baseChange: {
                 Intent intent = new Intent(this, BaseChangeActivity.class);
                 startActivity(intent);

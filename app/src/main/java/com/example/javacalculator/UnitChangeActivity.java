@@ -241,16 +241,6 @@ public class UnitChangeActivity extends AppCompatActivity implements View.OnClic
                 finish();
             }
             break;
-            case R.id.cal: {
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
-            }
-            break;
-            case R.id.baseChange_unit: {
-                Intent intent = new Intent(this, BaseChangeActivity.class);
-                startActivity(intent);
-            }
-            break;
         }
         return true;
     }

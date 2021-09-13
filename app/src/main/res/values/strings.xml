@@ -13,7 +13,8 @@
     <string name="square">x²</string>
     <string name="help">help</string>
     <string name="exit">exit</string>
-    <string name="unitChange">单位转换</string>
+    <string name="unitChange">长度转换</string>
+    <string name="volumeChange">体积转换</string>
     <string name="baseChange">进制转换</string>
     <string name="cal">计算器</string>
     <string name="delete">Del</string>

@@ -10,6 +10,9 @@
         android:id="@+id/unitChange"
         android:title="@string/unitChange" />
     <item
+        android:id="@+id/volumeChange"
+        android:title="@string/volumeChange" />
+    <item
         android:id="@+id/baseChange"
         android:title="@string/baseChange" />
 </menu>
